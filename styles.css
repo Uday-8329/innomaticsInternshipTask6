@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#searchInput {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.movie {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  padding: 15px;
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.movie-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.favorite-button, .review-button, .rating button {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.rating label {
+  margin-right: 10px;
+}
+
+.review-form {
+  display: none;
+  margin-top: 10px;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
